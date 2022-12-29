@@ -1,0 +1,44 @@
+*{
+
+}
+
+.body{
+   
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+.panle {
+    background-size: auto 100%;
+    height: 80vh;
+    border-radius: 50px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    flex: 0.5;
+    margin: 10px;
+    position: relative;
+    transition: flex 0.5s ease-in;
+}
+
+.panle h2 {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    opacity: 0;
+
+}
+
+.panle.active {
+    flex: 5;
+
+}
+.panle.active h2 {
+    opacity: 1;
+    transition: opacity 0.9s ease-in 0.5s;
+}
